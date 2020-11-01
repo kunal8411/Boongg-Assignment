@@ -54,7 +54,9 @@ class PostItem extends React.Component {
         post:this.props._id,
         user:this.props.currentUser
     });
+    this.setState({comment:''})
     alert("Comments Added Successfully");
+    
   }
   addLikes=()=>{
     this.setState({likes:this.state.likes+1})

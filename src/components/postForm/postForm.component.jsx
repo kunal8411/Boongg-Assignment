@@ -23,7 +23,9 @@ class PostForm extends React.Component{
             content:this.state.post,
             postid:this.props.currentUser
         });
+        this.setState({post:''})
         alert("Post Added successfully");
+
     }
     handleChange=(event)=>{
         this.setState({post:event.target.value});
